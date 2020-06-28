@@ -1,33 +1,24 @@
-httprunner startproject primary_api_test    
-har2case    
-hrun har/test_har_test.py --alluredir=alluredir_reports/
+使用httprunner脚手架搭建：```httprunner startproject primary_api_test```
 
-pip install -r requirements.txt
+将charles导出的har转换为yaml或json或pytest文件：```har2case```    
+
+跑case时使用命令，使用了allure-pytest报告插件：```hrun har/test_har_test.py --alluredir=alluredir_reports/```
+
+安装项目依赖：```pip install -r requirements.txt```
+
+项目结构说明
 ```
 .
 ├── README.md
-├── __pycache__
-│   └── debugtalk.cpython-38.pyc
-├── alluredir_reports
-│   ├── 7bfd6976-fc3b-4163-b443-2ce1f150a741-attachment.txt
-│   ├── 8ef5bb5f-2798-49f1-9704-25a5d3ffa0f9-attachment.txt
-│   ├── ab177e42-a93b-4a99-91bc-075dad006c44-result.json
-│   └── b3733bd2-3b86-4c40-b45e-a3bda2c430a3-result.json
-├── debugtalk.py
-├── har
-├── logs
-│   ├── c2a27a81-3d2c-4032-b280-e98a44d9ad55.run.log
-│   └── fcfdbe3c-1b44-430b-977f-38628f1c14a2.run.log
-├── reports
-├── requirements.txt
-└── testcases
-    ├── __init__.py
-    ├── __pycache__
-    │   ├── __init__.cpython-38.pyc
-    │   ├── demo_testcase_ref_test.cpython-38-pytest-5.4.3.pyc
-    │   └── demo_testcase_request_test.cpython-38-pytest-5.4.3.pyc
-    ├── demo_testcase_ref.yml
-    ├── demo_testcase_ref_test.py
-    ├── demo_testcase_request.yml
-    └── demo_testcase_request_test.py
+├── alluredir_reports  #在使用allrue-pytest插件生成报告存放到此处
+├── debugtalk.py  #在运行case时使用的插件
+├── har  #存放charles导出的har文件
+├── logs  #hrun后生成的日志
+    ├── *.log
+├── reports  #httprunner自带日志报告输出
+├── requirements.txt  #项目依赖
+└── testcases    #测试case存放处，可存放yaml、json、pytest
+    ├── *.yml
+    ├── *.py
+    ├── *.json
 ```
