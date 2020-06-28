@@ -61,7 +61,7 @@ pipeline {
                     if (env.BRANCH_NAME == 'master') {
                         sh "echo skip"
                     } else {
-                        sshCommand remote:remote, command: "/home/master/bin/k8s-deploy.sh ${env.project_name} ${env.BRANCH_NAME} ops test"
+                        sshCommand remote:remote, command: "/home/master/bin/k8s-deploy.sh ${env.project_name} ${env.BRANCH_NAME} ops username"
                     }
                 }
             }

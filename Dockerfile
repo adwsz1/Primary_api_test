@@ -1,4 +1,4 @@
-FROM python:3.7.6-slim-stretch
+FROM python:3.8.0
 RUN echo "Asia/Chongqing" > /etc/timezone
 RUN unlink /etc/localtime
 RUN ln -s /usr/share/zoneinfo/Asia/Chongqing /etc/localtime
