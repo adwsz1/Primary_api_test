@@ -1,0 +1,282 @@
+2020-06-28 15:33:31.683 | INFO     | httprunner.runner:test_start:440 - Start to run testcase: request methods testcase: reference testcase, TestCase ID: fcfdbe3c-1b44-430b-977f-38628f1c14a2
+2020-06-28 15:33:31.684 | INFO     | httprunner.runner:__run_step:284 - run step begin: request with functions >>>>>>
+2020-06-28 15:33:31.685 | INFO     | httprunner.runner:__run_step:284 - run step begin: get with params >>>>>>
+2020-06-28 15:33:32.900 | DEBUG    | httprunner.client:request:186 - client IP: 10.8.17.142, Port: 57054
+2020-06-28 15:33:32.900 | DEBUG    | httprunner.client:request:194 - server IP: 34.225.135.82, Port: 443
+2020-06-28 15:33:32.901 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://postman-echo.com/get?foo1=bar11&foo2=bar21&sum_v=3
+headers  : {
+    "User-Agent": "HttpRunner/3.1.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "HRUN-Request-ID": "HRUN-fcfdbe3c-1b44-430b-977f-38628f1c14a2-611685",
+    "Content-Length": "2",
+    "Content-Type": "application/json"
+}
+cookies  : {}
+body     : {}
+
+2020-06-28 15:33:32.901 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Sun, 28 Jun 2020 07:33:32 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "476",
+    "Connection": "keep-alive",
+    "ETag": "W/\"1dc-Uxn2EcMg8lEjPK1Wiui4SJV4asQ\"",
+    "Vary": "Accept-Encoding",
+    "set-cookie": "sails.sid=s%3A6xi_laC2mw80SUnsAdlhEcHTRUv0F2Uh.tqvNJCPN%2Bvwc6j74fWu0A4da51Hs84W1mgqS8yZfANc; Path=/; HttpOnly"
+}
+cookies  : {
+    "sails.sid": "s%3A6xi_laC2mw80SUnsAdlhEcHTRUv0F2Uh.tqvNJCPN%2Bvwc6j74fWu0A4da51Hs84W1mgqS8yZfANc"
+}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "args": {
+        "foo1": "bar11",
+        "foo2": "bar21",
+        "sum_v": "3"
+    },
+    "headers": {
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "postman-echo.com",
+        "x-amzn-trace-id": "Root=1-5ef847cc-52e0da70ed4db980ee8285be",
+        "content-length": "2",
+        "user-agent": "HttpRunner/3.1.1",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "hrun-request-id": "HRUN-fcfdbe3c-1b44-430b-977f-38628f1c14a2-611685",
+        "content-type": "application/json"
+    },
+    "url": "https://postman-echo.com/get?foo1=bar11&foo2=bar21&sum_v=3"
+}
+
+2020-06-28 15:33:32.902 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 1214.79 ms, response_length: 0 bytes
+2020-06-28 15:33:32.902 | INFO     | httprunner.response:extract:164 - extract mapping: {'foo3': 'bar21'}
+2020-06-28 15:33:32.902 | INFO     | httprunner.response:validate:227 - assert status_code equal 200(int)	==> pass
+2020-06-28 15:33:32.902 | INFO     | httprunner.response:validate:227 - assert body.args.foo1 equal bar11(str)	==> pass
+2020-06-28 15:33:32.903 | INFO     | httprunner.response:validate:227 - assert body.args.sum_v equal 3(str)	==> pass
+2020-06-28 15:33:32.903 | INFO     | httprunner.response:validate:227 - assert body.args.foo2 equal bar21(str)	==> pass
+2020-06-28 15:33:32.903 | INFO     | httprunner.runner:__run_step:296 - run step end: get with params <<<<<<
+
+2020-06-28 15:33:32.903 | INFO     | httprunner.runner:__run_step:284 - run step begin: post raw text >>>>>>
+2020-06-28 15:33:33.225 | DEBUG    | httprunner.client:request:186 - client IP: 10.8.17.142, Port: 57054
+2020-06-28 15:33:33.225 | DEBUG    | httprunner.client:request:194 - server IP: 34.225.135.82, Port: 443
+2020-06-28 15:33:33.226 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://postman-echo.com/post
+headers  : {
+    "User-Agent": "HttpRunner/3.1.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Type": "text/plain",
+    "HRUN-Request-ID": "HRUN-fcfdbe3c-1b44-430b-977f-38628f1c14a2-612903",
+    "Cookie": "sails.sid=s%3A6xi_laC2mw80SUnsAdlhEcHTRUv0F2Uh.tqvNJCPN%2Bvwc6j74fWu0A4da51Hs84W1mgqS8yZfANc",
+    "Content-Length": "83"
+}
+cookies  : {
+    "sails.sid": "s%3A6xi_laC2mw80SUnsAdlhEcHTRUv0F2Uh.tqvNJCPN%2Bvwc6j74fWu0A4da51Hs84W1mgqS8yZfANc"
+}
+body     : This is expected to be sent back as part of response body: bar12-config_bar2-bar21.
+
+2020-06-28 15:33:33.226 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Sun, 28 Jun 2020 07:33:33 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "631",
+    "Connection": "keep-alive",
+    "ETag": "W/\"277-f2vq4JiH3Blo2Gsh0uFYaDxoB/w\"",
+    "Vary": "Accept-Encoding",
+    "set-cookie": "sails.sid=s%3AQxh3gr_TLqZePX65HyHVNtbFQjL6fLqu.IwcCOD4M0eYqzY2E26Vtjb7M6vQLYffpURemEcQxvR0; Path=/; HttpOnly"
+}
+cookies  : {
+    "sails.sid": "s%3AQxh3gr_TLqZePX65HyHVNtbFQjL6fLqu.IwcCOD4M0eYqzY2E26Vtjb7M6vQLYffpURemEcQxvR0"
+}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "args": {},
+    "data": "This is expected to be sent back as part of response body: bar12-config_bar2-bar21.",
+    "files": {},
+    "form": {},
+    "headers": {
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "postman-echo.com",
+        "x-amzn-trace-id": "Root=1-5ef847cd-7a8dd966fc7c8a7a67db9ba8",
+        "content-length": "83",
+        "user-agent": "HttpRunner/3.1.1",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "content-type": "text/plain",
+        "hrun-request-id": "HRUN-fcfdbe3c-1b44-430b-977f-38628f1c14a2-612903",
+        "cookie": "sails.sid=s%3A6xi_laC2mw80SUnsAdlhEcHTRUv0F2Uh.tqvNJCPN%2Bvwc6j74fWu0A4da51Hs84W1mgqS8yZfANc"
+    },
+    "json": null,
+    "url": "https://postman-echo.com/post"
+}
+
+2020-06-28 15:33:33.226 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 321.52 ms, response_length: 0 bytes
+2020-06-28 15:33:33.227 | INFO     | httprunner.response:validate:227 - assert status_code equal 200(int)	==> pass
+2020-06-28 15:33:33.227 | INFO     | httprunner.response:validate:227 - assert body.data equal This is expected to be sent back as part of response body: bar12-config_bar2-bar21.(str)	==> pass
+2020-06-28 15:33:33.227 | INFO     | httprunner.runner:__run_step:296 - run step end: post raw text <<<<<<
+
+2020-06-28 15:33:33.227 | INFO     | httprunner.runner:__run_step:284 - run step begin: post form data >>>>>>
+2020-06-28 15:33:33.534 | DEBUG    | httprunner.client:request:186 - client IP: 10.8.17.142, Port: 57054
+2020-06-28 15:33:33.535 | DEBUG    | httprunner.client:request:194 - server IP: 34.225.135.82, Port: 443
+2020-06-28 15:33:33.535 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://postman-echo.com/post
+headers  : {
+    "User-Agent": "HttpRunner/3.1.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "HRUN-Request-ID": "HRUN-fcfdbe3c-1b44-430b-977f-38628f1c14a2-613228",
+    "Cookie": "sails.sid=s%3AQxh3gr_TLqZePX65HyHVNtbFQjL6fLqu.IwcCOD4M0eYqzY2E26Vtjb7M6vQLYffpURemEcQxvR0",
+    "Content-Length": "44"
+}
+cookies  : {
+    "sails.sid": "s%3AQxh3gr_TLqZePX65HyHVNtbFQjL6fLqu.IwcCOD4M0eYqzY2E26Vtjb7M6vQLYffpURemEcQxvR0"
+}
+body     : foo1=testcase_ref_bar1&foo2=bar23&foo3=bar21
+
+2020-06-28 15:33:33.536 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Sun, 28 Jun 2020 07:33:33 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "679",
+    "Connection": "keep-alive",
+    "ETag": "W/\"2a7-dDVutnkcM+hSGNGSaGqHndTnSjE\"",
+    "Vary": "Accept-Encoding"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "args": {},
+    "data": "",
+    "files": {},
+    "form": {
+        "foo1": "testcase_ref_bar1",
+        "foo2": "bar23",
+        "foo3": "bar21"
+    },
+    "headers": {
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "postman-echo.com",
+        "x-amzn-trace-id": "Root=1-5ef847cd-5785d9001ee4571647c2bc4e",
+        "content-length": "44",
+        "user-agent": "HttpRunner/3.1.1",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "content-type": "application/x-www-form-urlencoded",
+        "hrun-request-id": "HRUN-fcfdbe3c-1b44-430b-977f-38628f1c14a2-613228",
+        "cookie": "sails.sid=s%3AQxh3gr_TLqZePX65HyHVNtbFQjL6fLqu.IwcCOD4M0eYqzY2E26Vtjb7M6vQLYffpURemEcQxvR0"
+    },
+    "json": {
+        "foo1": "testcase_ref_bar1",
+        "foo2": "bar23",
+        "foo3": "bar21"
+    },
+    "url": "https://postman-echo.com/post"
+}
+
+2020-06-28 15:33:33.537 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 306.5 ms, response_length: 0 bytes
+2020-06-28 15:33:33.537 | INFO     | httprunner.response:validate:227 - assert status_code equal 200(int)	==> pass
+2020-06-28 15:33:33.537 | INFO     | httprunner.response:validate:227 - assert body.form.foo1 equal testcase_ref_bar1(str)	==> pass
+2020-06-28 15:33:33.538 | INFO     | httprunner.response:validate:227 - assert body.form.foo2 equal bar23(str)	==> pass
+2020-06-28 15:33:33.538 | INFO     | httprunner.response:validate:227 - assert body.form.foo3 equal bar21(str)	==> pass
+2020-06-28 15:33:33.538 | INFO     | httprunner.runner:__run_step:296 - run step end: post form data <<<<<<
+
+2020-06-28 15:33:33.538 | INFO     | httprunner.runner:__run_step_testcase:278 - export variables: {'foo3': 'bar21'}
+2020-06-28 15:33:33.539 | INFO     | httprunner.runner:__run_step:296 - run step end: request with functions <<<<<<
+
+2020-06-28 15:33:33.539 | INFO     | httprunner.runner:__run_step:284 - run step begin: post form data >>>>>>
+2020-06-28 15:33:33.835 | DEBUG    | httprunner.client:request:186 - client IP: 10.8.17.142, Port: 57054
+2020-06-28 15:33:33.835 | DEBUG    | httprunner.client:request:194 - server IP: 34.225.135.82, Port: 443
+2020-06-28 15:33:33.836 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://postman-echo.com/post
+headers  : {
+    "User-Agent": "HttpRunner/3.1.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "HRUN-Request-ID": "HRUN-fcfdbe3c-1b44-430b-977f-38628f1c14a2-613539",
+    "Cookie": "sails.sid=s%3AQxh3gr_TLqZePX65HyHVNtbFQjL6fLqu.IwcCOD4M0eYqzY2E26Vtjb7M6vQLYffpURemEcQxvR0",
+    "Content-Length": "20"
+}
+cookies  : {
+    "sails.sid": "s%3AQxh3gr_TLqZePX65HyHVNtbFQjL6fLqu.IwcCOD4M0eYqzY2E26Vtjb7M6vQLYffpURemEcQxvR0"
+}
+body     : foo1=bar1&foo2=bar21
+
+2020-06-28 15:33:33.840 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Sun, 28 Jun 2020 07:33:33 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "623",
+    "Connection": "keep-alive",
+    "ETag": "W/\"26f-TbdO7IDxn50MjWsCEC/cTMd4iPk\"",
+    "Vary": "Accept-Encoding",
+    "set-cookie": "sails.sid=s%3AQNLd0aMISKsRQ1WvP_XNBEHDRBTNEDpj.gJkXbXqJfzCQPPHgRqR7J10r7uDuoEUDgPTHRYjlhvQ; Path=/; HttpOnly"
+}
+cookies  : {
+    "sails.sid": "s%3AQNLd0aMISKsRQ1WvP_XNBEHDRBTNEDpj.gJkXbXqJfzCQPPHgRqR7J10r7uDuoEUDgPTHRYjlhvQ"
+}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "args": {},
+    "data": "",
+    "files": {},
+    "form": {
+        "foo1": "bar1",
+        "foo2": "bar21"
+    },
+    "headers": {
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "postman-echo.com",
+        "x-amzn-trace-id": "Root=1-5ef847cd-16d50b742361a300edbcf95a",
+        "content-length": "20",
+        "user-agent": "HttpRunner/3.1.1",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "content-type": "application/x-www-form-urlencoded",
+        "hrun-request-id": "HRUN-fcfdbe3c-1b44-430b-977f-38628f1c14a2-613539",
+        "cookie": "sails.sid=s%3AQxh3gr_TLqZePX65HyHVNtbFQjL6fLqu.IwcCOD4M0eYqzY2E26Vtjb7M6vQLYffpURemEcQxvR0"
+    },
+    "json": {
+        "foo1": "bar1",
+        "foo2": "bar21"
+    },
+    "url": "https://postman-echo.com/post"
+}
+
+2020-06-28 15:33:33.841 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 295.38 ms, response_length: 0 bytes
+2020-06-28 15:33:33.841 | INFO     | httprunner.response:validate:227 - assert status_code equal 200(int)	==> pass
+2020-06-28 15:33:33.841 | INFO     | httprunner.response:validate:227 - assert body.form.foo1 equal bar1(str)	==> pass
+2020-06-28 15:33:33.842 | INFO     | httprunner.response:validate:227 - assert body.form.foo2 equal bar21(str)	==> pass
+2020-06-28 15:33:33.842 | INFO     | httprunner.runner:__run_step:296 - run step end: post form data <<<<<<
+
