@@ -18,4 +18,4 @@ COPY . /opt/app/
 RUN virtualenv venv
 RUN . venv/bin/activate
 RUN pip install -r requirements.txt -i https://pypi.douban.com/simple
-CMD ["/bin/bash","bin/run.sh"]
+CMD ["/bin/bash","run.sh"]
