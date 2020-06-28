@@ -6,6 +6,8 @@
 
 安装项目依赖：```pip install -r requirements.txt```
 
+allure-pytest报告服务启动：```allure serve alluredir_reports/```
+
 项目结构说明
 ```
 .
