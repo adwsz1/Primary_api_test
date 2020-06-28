@@ -13,8 +13,7 @@ RUN pip install virtualenv -i https://pypi.douban.com/simple
 RUN mkdir /opt/app
 WORKDIR /opt/app
 RUN ls -a
-#COPY dist/ /opt/app/
-COPY . /opt/app/
+COPY dist/ /opt/app/
 RUN virtualenv venv
 RUN . venv/bin/activate
 RUN pip install -r requirements.txt -i https://pypi.douban.com/simple
