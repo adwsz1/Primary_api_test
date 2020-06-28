@@ -1,4 +1,4 @@
 #! /bin/bash
-/bin/bash har2case_all.sh
-/bin/bash hrun_all.sh
-/bin/bash allure_run.sh
+. har2case_all.sh
+. hrun_all.sh
+. allure_run.sh
