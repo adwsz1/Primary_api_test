@@ -12,8 +12,10 @@ RUN /usr/local/bin/python -m pip install --upgrade pip
 RUN pip install virtualenv -i https://pypi.douban.com/simple
 RUN mkdir /opt/app
 WORKDIR /opt/app
-COPY dist/ /opt/app/
+RUN ls -a
+#COPY dist/ /opt/app/
+COPY . /opt/app/
 RUN virtualenv venv
 RUN . venv/bin/activate
 RUN pip install -r requirements.txt -i https://pypi.douban.com/simple
-CMD [".","bin/run.sh"]
+CMD ["/bin/bash","bin/run.sh"]
