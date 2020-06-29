@@ -3,9 +3,10 @@ RUN echo "Asia/Chongqing" > /etc/timezone
 RUN unlink /etc/localtime
 RUN ln -s /usr/share/zoneinfo/Asia/Chongqing /etc/localtime
 RUN sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
-RUN apt update -y
-RUN apt install gcc curl nodejs npm openjdk-11-jdk -y
-RUN apt clean
+RUN apt-get clean
+RUN apt-get update
+RUN apt-get install gcc curl nodejs npm openjdk-11-jdk -y
+RUN apt-get clean
 RUN npm install -g cnpm
 RUN cnpm install -g allure-commandline --save-dev
 RUN /usr/local/bin/python -m pip install --upgrade pip
