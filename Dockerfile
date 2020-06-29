@@ -2,7 +2,7 @@ FROM python:3.8.0
 RUN echo "Asia/Chongqing" > /etc/timezone
 RUN unlink /etc/localtime
 RUN ln -s /usr/share/zoneinfo/Asia/Chongqing /etc/localtime
-RUN sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
+RUN sed -i 's#http://deb.debian.org#https://mirrors.163.com#g' /etc/apt/sources.list
 RUN apt-get clean
 RUN apt-get update
 RUN apt-get install gcc curl nodejs npm openjdk-11-jdk -y
