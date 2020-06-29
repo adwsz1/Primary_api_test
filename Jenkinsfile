@@ -27,7 +27,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'rm -rf dist && mkdir -p dist && cp ./*.py dist/ && cp ./allure_run.sh dist/ && cp ./har2case_all.sh dist/ && cp ./hrun_all.sh dist/ && cp ./run.sh dist/ && cp ./.env dist/ && cp ./*.txt dist/ && cp -R har dist/ && cp -R testcases dist/'
+                sh 'rm -rf dist && mkdir -p dist && cp ./*.py dist/ && cp ./*.sh dist/ && cp ./.env dist/ && cp ./*.txt dist/ && cp -R har dist/ && cp -R testcases dist/'
                 sh 'ls -al dist/'
                 sh "tar zvcf ${env.deploy_file} dist"
             }
