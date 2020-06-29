@@ -7,8 +7,7 @@ RUN apt-get clean
 RUN apt-get update
 RUN apt-get install gcc curl nodejs npm openjdk-11-jdk -y
 RUN apt-get clean
-RUN npm install -g cnpm
-RUN cnpm install -g allure-commandline --save-dev
+RUN npm install -g allure-commandline --save-dev
 RUN /usr/local/bin/python -m pip install --upgrade pip
 RUN pip install virtualenv -i https://pypi.douban.com/simple
 RUN mkdir /opt/app
