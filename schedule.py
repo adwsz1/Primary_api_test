@@ -55,8 +55,8 @@ def job2():
 
 
 scheduler = BlockingScheduler()
-scheduler.add_job(job1, 'interval', minutes=1, args=[])
-scheduler.add_job(job2, 'interval', minutes=1, seconds=15, args=[])
+scheduler.add_job(job1, 'interval', minutes=5, args=[])
+scheduler.add_job(job2, 'interval', minutes=10, args=[])
 """'interval', hours=2, start_date='2018-01-10 09:30:00''"""
 # scheduler.add_job(job, 'interval', weeks='mon', start_date='2018-01-10 09:30:00', args=[])
 
