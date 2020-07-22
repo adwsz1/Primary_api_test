@@ -1,2 +1,2 @@
 #! /bin/bash
-allure serve alluredir_reports -p 3000
+allure serve allure-results -p 3000
