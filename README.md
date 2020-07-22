@@ -25,3 +25,5 @@ allure-pytest报告服务启动：```allure serve alluredir_reports/```
     ├── *.json
 └── .env    #存放环境变量
 ```
+
+dos2unix file
