@@ -1,2 +1,2 @@
 #! /bin/bash
-hrun ./testcases/ --alluredir=allure_report/
+hrun ./testcases/ --alluredir=alluredir_reports/
