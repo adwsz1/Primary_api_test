@@ -36,10 +36,6 @@ class TestCaseT0731更新课程Token(HttpRunner):
             .assert_equal("status_code", 200)
             .assert_equal('headers."Content-Type"', "application/json; charset=utf-8")
             .assert_equal("body.ok", True)
-            .assert_equal(
-                "body.token",
-                "cIz1V358Ef7woh_xZ0cH5mTGWv-Q7fHf71saOcjn:pPKz7-noAYSIKYbyF8PSt8zeuPM=:eyJzY29wZSI6InljLXdlY2hhdCIsImRlYWRsaW5lIjoxNTk2MTkxNTI5fQ==",
-            )
         ),
     ]
 

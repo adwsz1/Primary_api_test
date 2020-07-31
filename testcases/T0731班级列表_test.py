@@ -38,9 +38,6 @@ class TestCaseT0731班级列表(HttpRunner):
             .validate()
             .assert_equal("status_code", 200)
             .assert_equal('headers."Content-Type"', "application/json; charset=utf-8")
-            .assert_equal(
-                "body.sign", "4BD109BABF431C1BDB1C1B3B36599B0A5F23EC4Dprimary"
-            )
             .assert_equal("body.crypto", True)
         ),
     ]
