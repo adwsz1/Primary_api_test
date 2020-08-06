@@ -40,13 +40,6 @@ class TestCaseT0806获取验证码(HttpRunner):
             )
             .validate()
             .assert_equal("status_code", 200)
-            .assert_equal(
-                "body.sign", "5B40099F45B3EABFB4F5685F118977E05F2B858Aprimary"
-            )
-            .assert_equal(
-                "body.context",
-                "VTJGc2RHVmtYMStzZ2pFb1BGdEcwRkJQK0dKOElvOFBoeFVjR3JMMFJzUFF0S0h6Q0QvallQZVdYeVBrTzh1OVMxSStJaTEvVEpzc2t0aStrUVYzOHc9PQ==",
-            )
             .assert_equal("body.crypto", True)
         ),
     ]
