@@ -20,7 +20,7 @@ class TestCaseT0806获取验证码(HttpRunner):
                     "content-length": "257",
                     "accept": "application/json, text/plain, */*",
                     "x-crypto-api": "true",
-                    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
+                    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36 Edg/84.0.522.52",
                     "content-type": "application/json;charset=UTF-8",
                     "origin": "https://yangcong345.com",
                     "sec-fetch-site": "same-site",
@@ -28,13 +28,13 @@ class TestCaseT0806获取验证码(HttpRunner):
                     "sec-fetch-dest": "empty",
                     "referer": "https://yangcong345.com/xiaoxue/login",
                     "accept-encoding": "gzip, deflate, br",
-                    "accept-language": "zh-CN,zh;q=0.9",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
                 }
             )
             .with_json(
                 {
-                    "sign": "FAA84E43443689F9112B396E011EDA5B5F2B858Aprimary",
-                    "context": "VTJGc2RHVmtYMTlJOVZEakxqVkp3QUxYQnNMTzJJaFYwcG5HejVOd1BlWWNlQy9ybTB3RXdOc0xsN0tlZWlUTkQrSXFJTGtqMmRzaUZyMTZHM09vbTc3Mzk3Z2RxOWd2MVpvNFdlbmdrZ1BhbnI3cUd0Y2NEbHF0elhtNURjWHc=",
+                    "sign": "8DC28CF98E911AFF61456391ECDBF8A65F2CC007primary",
+                    "context": "VTJGc2RHVmtYMTlCZzBud3hySXAzZHQvbFJVbVFNNlZJY2JkQzhLbU8zYXY1ZWw2bmtOR1c1dnVrUGhkQjhVa1JEYkN5QXNzUytBUUpnN1M2N3poVGIzSU9yV1JXRVNOUnBWSWIwSys1K0RBUDhjWC9hL2hCNDUxWWZURkV0bHk=",
                     "crypto": True,
                 }
             )
