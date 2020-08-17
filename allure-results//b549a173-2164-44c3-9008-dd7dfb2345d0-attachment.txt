@@ -1,0 +1,77 @@
+2020-08-17 17:35:18.635 | INFO     | httprunner.runner:test_start:435 - Start to run testcase: testcase description, TestCase ID: 5dcba231-58a1-4df3-bbf9-104771910161
+2020-08-17 17:35:18.636 | INFO     | httprunner.runner:__run_step:278 - run step begin: /primary_account/course/classInfoById >>>>>>
+2020-08-17 17:35:18.896 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://api-wx.yangcong345.com/primary_account/course/classInfoById?classId=5f23e7414b246b32da120c62
+headers  : {
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/605.1.15 (KHTML, like Gecko)",
+    "accept-encoding": "gzip, deflate, br",
+    "accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "origin": "https://h5-v5-0.yangcong345.com",
+    "referer": "https://h5-v5-0.yangcong345.com/xs-app/?scene=systemicClass&sceneParamsStr=%7B%22classId%22:%225f23e7414b246b32da120c62%22,%22unlockMode%22:%22week%22,%22curriculumVersion%22:2%7D&device=08BE5209-54CA-419A-9490-8EA9EED6B3B9&openUUID=fa34e7ef7bf60da55da79b66d4e90588d21e745e&userId=5e3afbd5af65480001ce2298&appVersion=5.32.0&platform=ios&phoneModel=iPad11,3&token=Bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjVlM2FmYmQ1YWY2NTQ4MDAwMWNlMjI5OCIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNTk2MTg2MjYyLCJleHAiOjE1OTg3ODA1OTN9.UijxgGygzilaQdZ3b-8stXvPyiVRRO3uV9TNsgo5yrw&clientChannel=appstore&clientType=ios-app&environment=release&exerciseDebug=0",
+    "accept-language": "zh-cn",
+    "authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ5aWQiOiI1ZTNhZmJkNWFmNjU0ODAwMDFjZTIyOTgiLCJwaG9uZSI6IjE4NTI0NjM1MjI3IiwicGxhdGZvcm0iOiJhcHBMZWFybkg1Iiwid2VjaGF0SWQiOjE5NTIzMSwiZXhwIjoxNjI3NzI0NjAyfQ.u0MjIyJBVhmXjFYHD3gqB253BFbLsOCEgf7iTp4WayY",
+    "Postman-Token": "d9e381cb-aa6c-41bd-a244-ba8deb28f0bb",
+    "Host": "api-wx.yangcong345.com",
+    "HRUN-Request-ID": "HRUN-5dcba231-58a1-4df3-bbf9-104771910161-918636",
+    "Content-Length": "2",
+    "Content-Type": "application/json"
+}
+cookies  : {}
+body     : {}
+
+2020-08-17 17:35:18.896 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 400
+headers  : {
+    "Date": "Mon, 17 Aug 2020 09:35:18 GMT",
+    "Content-Type": "application/octet-stream",
+    "Content-Length": "0",
+    "Connection": "keep-alive",
+    "X-Server-Info": "wechatgateway-86f684c957-vqbc2;1",
+    "Access-Control-Allow-Origin": "https://h5-v5-0.yangcong345.com",
+    "Access-Control-Allow-Methods": "GET,HEAD,PUT,POST,DELETE"
+}
+cookies  : {}
+encoding : None
+content_type : application/octet-stream
+body     : 
+
+2020-08-17 17:35:18.896 | ERROR    | httprunner.client:request:200 - 400 Client Error: Bad Request for url: https://api-wx.yangcong345.com/primary_account/course/classInfoById?classId=5f23e7414b246b32da120c62
+2020-08-17 17:35:18.897 | ERROR    | httprunner.response:validate:222 - assert status_code equal 200(int)	==> fail
+check_item: status_code
+check_value: 400(int)
+assert_method: equal
+expect_value: 200(int)
+2020-08-17 17:35:18.897 | ERROR    | httprunner.response:validate:222 - assert headers."Content-Type" equal application/json; charset=utf-8(str)	==> fail
+check_item: headers."Content-Type"
+check_value: application/octet-stream(str)
+assert_method: equal
+expect_value: application/json; charset=utf-8(str)
+2020-08-17 17:35:18.897 | ERROR    | httprunner.response:validate:222 - assert body.code equal 0(int)	==> fail
+check_item: body.code
+check_value: None(NoneType)
+assert_method: equal
+expect_value: 0(int)
+2020-08-17 17:35:18.897 | ERROR    | httprunner.runner:log_req_resp_details:194 - 
+******************************** DETAILED REQUEST & RESPONSE ********************************
+====== request details ======
+url: https://api-wx.yangcong345.com/primary_account/course/classInfoById
+method: GET
+headers: {'accept': 'application/json, text/plain, */*', 'origin': 'https://h5-v5-0.yangcong345.com', 'referer': 'https://h5-v5-0.yangcong345.com/xs-app/?scene=systemicClass&sceneParamsStr=%7B%22classId%22:%225f23e7414b246b32da120c62%22,%22unlockMode%22:%22week%22,%22curriculumVersion%22:2%7D&device=08BE5209-54CA-419A-9490-8EA9EED6B3B9&openUUID=fa34e7ef7bf60da55da79b66d4e90588d21e745e&userId=5e3afbd5af65480001ce2298&appVersion=5.32.0&platform=ios&phoneModel=iPad11,3&token=Bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjVlM2FmYmQ1YWY2NTQ4MDAwMWNlMjI5OCIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNTk2MTg2MjYyLCJleHAiOjE1OTg3ODA1OTN9.UijxgGygzilaQdZ3b-8stXvPyiVRRO3uV9TNsgo5yrw&clientChannel=appstore&clientType=ios-app&environment=release&exerciseDebug=0', 'accept-language': 'zh-cn', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/605.1.15 (KHTML, like Gecko)', 'authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJ5aWQiOiI1ZTNhZmJkNWFmNjU0ODAwMDFjZTIyOTgiLCJwaG9uZSI6IjE4NTI0NjM1MjI3IiwicGxhdGZvcm0iOiJhcHBMZWFybkg1Iiwid2VjaGF0SWQiOjE5NTIzMSwiZXhwIjoxNjI3NzI0NjAyfQ.u0MjIyJBVhmXjFYHD3gqB253BFbLsOCEgf7iTp4WayY', 'accept-encoding': 'gzip, deflate, br', 'Postman-Token': 'd9e381cb-aa6c-41bd-a244-ba8deb28f0bb', 'Host': 'api-wx.yangcong345.com', 'Connection': 'keep-alive', 'HRUN-Request-ID': 'HRUN-5dcba231-58a1-4df3-bbf9-104771910161-918636'}
+params: {'classId': '5f23e7414b246b32da120c62'}
+data: ''
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+json: {}
+
+====== response details ======
+status_code: 400
+headers: {'Date': 'Mon, 17 Aug 2020 09:35:18 GMT', 'Content-Type': 'application/octet-stream', 'Content-Length': '0', 'Connection': 'keep-alive', 'X-Server-Info': 'wechatgateway-86f684c957-vqbc2;1', 'Access-Control-Allow-Origin': 'https://h5-v5-0.yangcong345.com', 'Access-Control-Allow-Methods': 'GET,HEAD,PUT,POST,DELETE'}
+body: ''
+
+2020-08-17 17:35:18.898 | INFO     | httprunner.runner:test_start:444 - generate testcase log: /Users/yangshuai/PycharmProjects/untitled/primary_api_test/logs/5dcba231-58a1-4df3-bbf9-104771910161.run.log

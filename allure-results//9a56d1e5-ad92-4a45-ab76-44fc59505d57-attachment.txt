@@ -1,0 +1,93 @@
+2020-08-17 17:35:16.408 | INFO     | httprunner.runner:test_start:435 - Start to run testcase: testcase description, TestCase ID: 49c9fd40-e43e-4827-b82d-bd52f5fbc7ba
+2020-08-17 17:35:16.408 | INFO     | httprunner.runner:__run_step:278 - run step begin: /primary_account/assignClass/getClass >>>>>>
+2020-08-17 17:35:16.785 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api-wx.yangcong345.com/primary_account/assignClass/getClass
+headers  : {
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/605.1.15 (KHTML, like Gecko)",
+    "accept-encoding": "gzip, deflate, br",
+    "accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "origin": "https://h5-v5-0.yangcong345.com",
+    "content-type": "application/json;charset=utf-8",
+    "authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ5aWQiOiI1ZTNhZmJkNWFmNjU0ODAwMDFjZTIyOTgiLCJwaG9uZSI6IjE4NTI0NjM1MjI3IiwicGxhdGZvcm0iOiJhcHBMZWFybkg1Iiwid2VjaGF0SWQiOjE5NTIzMSwiZXhwIjoxNjI3NzIzMzM4fQ.xRItRjFdVoKqKsU8dMQoPLoxod8uUGsli0Jf9VSsoGo",
+    "referer": "https://h5-v5-0.yangcong345.com/xs-app/cv2/addWechat",
+    "Content-Length": "39",
+    "accept-language": "zh-cn",
+    "Postman-Token": "eb1aca3a-7cd1-414c-89a3-b534aaf28586",
+    "Host": "api-wx.yangcong345.com",
+    "HRUN-Request-ID": "HRUN-49c9fd40-e43e-4827-b82d-bd52f5fbc7ba-916409"
+}
+cookies  : {}
+body     : {
+    "classId": "5f0dbf98e08ce80fd5fa97d7"
+}
+
+2020-08-17 17:35:16.786 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Mon, 17 Aug 2020 09:35:16 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "1029",
+    "Connection": "keep-alive",
+    "x-server-info": "primary-school-server-5ddd47bf98-nx4tl;1",
+    "access-control-allow-origin": "*",
+    "Access-Control-Allow-Methods": "GET,HEAD,PUT,POST,DELETE",
+    "vary": "Origin",
+    "access-control-expose-headers": "Content-Range"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "code": 0,
+    "result": [
+        {
+            "_id": "5f0dbf98e08ce80fd5fa97d7",
+            "updatedAt": "2020-08-07T03:43:29.612Z",
+            "createdAt": "2020-07-14T14:22:16.645Z",
+            "name": "1-\u6d4b\u8bd5\u5c0f\u8bfe-3",
+            "invalidTime": "2021-04-30T16:00:00.000Z",
+            "shadowId": "5c07473717c54b05adb55eb5",
+            "type": "\u4f53\u9a8c\u73ed",
+            "grade": 11,
+            "startTime": "2019-07-15T16:00:00.000Z",
+            "description": "\u81ea\u52a8\u5316\u521b\u5efa\u73ed\u7ea7\u522b\u91cd\u590d",
+            "endTime": "2021-04-29T16:00:00.000Z",
+            "stopTime": "2019-07-05T16:00:00.000Z",
+            "curriculumId": "5f2ccc227856849f62d8c141",
+            "id": "202007147370",
+            "ifInvalid": false,
+            "isPost": true,
+            "studentCount": 180,
+            "chapterList": [],
+            "__v": 0,
+            "wxManagmentId": {
+                "_id": "5d525f1ea606550d2c20f76a",
+                "updatedAt": "2020-02-13T08:22:14.552Z",
+                "createdAt": "2019-08-13T06:56:30.747Z",
+                "teacherWeChat": "ycsx0735",
+                "nickName": "\u6d0b\u8471\u73ed\u4e3b\u4efb-\u661f\u661f",
+                "qrCode": "https://wx-static.yangcong345.com/1581582130780173d9ca4d5bc585bf0713c6236a3f8d.jpg",
+                "state": "1",
+                "__v": 0
+            },
+            "teacherWechat": "ycsx0735",
+            "teacherWechatImg": "https://wx-static.yangcong345.com/1581582130780173d9ca4d5bc585bf0713c6236a3f8d.jpg",
+            "scoreInterval": [
+                0,
+                151
+            ]
+        }
+    ]
+}
+
+2020-08-17 17:35:16.786 | INFO     | httprunner.client:request:203 - status_code: 200, response_time(ms): 375.65 ms, response_length: 1029 bytes
+2020-08-17 17:35:16.787 | INFO     | httprunner.response:validate:209 - assert status_code equal 200(int)	==> pass
+2020-08-17 17:35:16.787 | INFO     | httprunner.response:validate:209 - assert headers."Content-Type" equal application/json; charset=utf-8(str)	==> pass
+2020-08-17 17:35:16.788 | INFO     | httprunner.response:validate:209 - assert body.code equal 0(int)	==> pass
+2020-08-17 17:35:16.788 | INFO     | httprunner.runner:__run_step:290 - run step end: /primary_account/assignClass/getClass <<<<<<
+
+2020-08-17 17:35:16.788 | INFO     | httprunner.runner:test_start:444 - generate testcase log: /Users/yangshuai/PycharmProjects/untitled/primary_api_test/logs/49c9fd40-e43e-4827-b82d-bd52f5fbc7ba.run.log

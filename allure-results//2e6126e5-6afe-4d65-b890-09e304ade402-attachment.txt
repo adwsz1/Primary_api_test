@@ -1,0 +1,71 @@
+2020-08-17 17:35:20.536 | INFO     | httprunner.runner:test_start:435 - Start to run testcase: testcase description, TestCase ID: f38c0956-6673-416c-b5b3-3c374ed7a7ba
+2020-08-17 17:35:20.536 | INFO     | httprunner.runner:__run_step:278 - run step begin: /primary_account/userAddress/address/list >>>>>>
+2020-08-17 17:35:20.680 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://api-primary.yangcong345.com/primary_account/userAddress/address/list?userId=5e3afbd5af65480001ce2298
+headers  : {
+    "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
+    "accept-encoding": "gzip, deflate, br",
+    "accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "origin": "https://h5-v5-0.yangcong345.com",
+    "referer": "https://h5-v5-0.yangcong345.com/xs-app/study/confirmExchange",
+    "accept-language": "zh-cn",
+    "authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ5aWQiOiI1ZTNhZmJkNWFmNjU0ODAwMDFjZTIyOTgiLCJwaG9uZSI6IjE4NTI0NjM1MjI3IiwicGxhdGZvcm0iOiJhcHBMZWFybkg1Iiwid2VjaGF0SWQiOjE5NTIzMSwiZXhwIjoxNjI5MTcyNjM0fQ.RRFyl9hHLt3VNxApA60RPQxR8QEhoL5aii8YxCBDXmw",
+    "HRUN-Request-ID": "HRUN-f38c0956-6673-416c-b5b3-3c374ed7a7ba-920536",
+    "Content-Length": "2",
+    "Content-Type": "application/json"
+}
+cookies  : {}
+body     : {}
+
+2020-08-17 17:35:20.681 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 400
+headers  : {
+    "Date": "Mon, 17 Aug 2020 09:35:20 GMT",
+    "Content-Type": "application/octet-stream",
+    "Content-Length": "0",
+    "Connection": "keep-alive",
+    "X-Server-Info": "primary-gateway-5cfb764cc9-bshqz;1",
+    "Access-Control-Allow-Origin": "https://h5-v5-0.yangcong345.com",
+    "Access-Control-Allow-Methods": "GET,HEAD,PUT,POST,DELETE",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {}
+encoding : None
+content_type : application/octet-stream
+body     : 
+
+2020-08-17 17:35:20.681 | ERROR    | httprunner.client:request:200 - 400 Client Error: Bad Request for url: https://api-primary.yangcong345.com/primary_account/userAddress/address/list?userId=5e3afbd5af65480001ce2298
+2020-08-17 17:35:20.682 | ERROR    | httprunner.response:validate:222 - assert status_code equal 200(int)	==> fail
+check_item: status_code
+check_value: 400(int)
+assert_method: equal
+expect_value: 200(int)
+2020-08-17 17:35:20.682 | ERROR    | httprunner.response:validate:222 - assert body.code equal 0(int)	==> fail
+check_item: body.code
+check_value: None(NoneType)
+assert_method: equal
+expect_value: 0(int)
+2020-08-17 17:35:20.682 | ERROR    | httprunner.runner:log_req_resp_details:194 - 
+******************************** DETAILED REQUEST & RESPONSE ********************************
+====== request details ======
+url: https://api-primary.yangcong345.com/primary_account/userAddress/address/list
+method: GET
+headers: {'accept': 'application/json, text/plain, */*', 'origin': 'https://h5-v5-0.yangcong345.com', 'referer': 'https://h5-v5-0.yangcong345.com/xs-app/study/confirmExchange', 'accept-language': 'zh-cn', 'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148', 'authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJ5aWQiOiI1ZTNhZmJkNWFmNjU0ODAwMDFjZTIyOTgiLCJwaG9uZSI6IjE4NTI0NjM1MjI3IiwicGxhdGZvcm0iOiJhcHBMZWFybkg1Iiwid2VjaGF0SWQiOjE5NTIzMSwiZXhwIjoxNjI5MTcyNjM0fQ.RRFyl9hHLt3VNxApA60RPQxR8QEhoL5aii8YxCBDXmw', 'accept-encoding': 'gzip, deflate, br', 'HRUN-Request-ID': 'HRUN-f38c0956-6673-416c-b5b3-3c374ed7a7ba-920536'}
+params: {'userId': '5e3afbd5af65480001ce2298'}
+data: ''
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+json: {}
+
+====== response details ======
+status_code: 400
+headers: {'Date': 'Mon, 17 Aug 2020 09:35:20 GMT', 'Content-Type': 'application/octet-stream', 'Content-Length': '0', 'Connection': 'keep-alive', 'X-Server-Info': 'primary-gateway-5cfb764cc9-bshqz;1', 'Access-Control-Allow-Origin': 'https://h5-v5-0.yangcong345.com', 'Access-Control-Allow-Methods': 'GET,HEAD,PUT,POST,DELETE', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains'}
+body: ''
+
+2020-08-17 17:35:20.683 | INFO     | httprunner.runner:test_start:444 - generate testcase log: /Users/yangshuai/PycharmProjects/untitled/primary_api_test/logs/f38c0956-6673-416c-b5b3-3c374ed7a7ba.run.log

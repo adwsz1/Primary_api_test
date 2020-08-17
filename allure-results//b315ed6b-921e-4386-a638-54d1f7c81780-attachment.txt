@@ -1,0 +1,74 @@
+2020-08-17 17:35:15.563 | INFO     | httprunner.runner:test_start:435 - Start to run testcase: testcase description, TestCase ID: acbde1d9-f854-4e8e-a737-776ae149004a
+2020-08-17 17:35:15.563 | INFO     | httprunner.runner:__run_step:278 - run step begin: /primary_account/course/coursePreInfo >>>>>>
+2020-08-17 17:35:15.720 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://api-primary.yangcong345.com/primary_account/course/coursePreInfo?classId=5f0fcc66e1e362742885f1fc
+headers  : {
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
+    "accept-encoding": "gzip, deflate, br",
+    "accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ5aWQiOiI1ZTNhZmJkNWFmNjU0ODAwMDFjZTIyOTgiLCJwaG9uZSI6IjE4NTI0NjM1MjI3IiwicGxhdGZvcm0iOiJwY0g1Iiwid2VjaGF0SWQiOjE5NTIzMSwiZXhwIjoxNjI4MjIyNjc2fQ.XqpHj1HznASsyQP0flOT6XIVhyZqGzfBe4u9Qe9aXfI",
+    "origin": "https://yangcong345.com",
+    "sec-fetch-site": "same-site",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "empty",
+    "referer": "https://yangcong345.com/xiaoxue/chapters?courseId=5f0fcc66e1e362742885f1fc&v=2",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "HRUN-Request-ID": "HRUN-acbde1d9-f854-4e8e-a737-776ae149004a-915564",
+    "Content-Length": "2",
+    "Content-Type": "application/json"
+}
+cookies  : {}
+body     : {}
+
+2020-08-17 17:35:15.721 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 400
+headers  : {
+    "Date": "Mon, 17 Aug 2020 09:35:15 GMT",
+    "Content-Type": "application/octet-stream",
+    "Content-Length": "0",
+    "Connection": "keep-alive",
+    "X-Server-Info": "primary-gateway-5cfb764cc9-46d2d;1",
+    "Access-Control-Allow-Origin": "https://yangcong345.com",
+    "Access-Control-Allow-Methods": "GET,HEAD,PUT,POST,DELETE",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {}
+encoding : None
+content_type : application/octet-stream
+body     : 
+
+2020-08-17 17:35:15.722 | ERROR    | httprunner.client:request:200 - 400 Client Error: Bad Request for url: https://api-primary.yangcong345.com/primary_account/course/coursePreInfo?classId=5f0fcc66e1e362742885f1fc
+2020-08-17 17:35:15.722 | ERROR    | httprunner.response:validate:222 - assert status_code equal 200(int)	==> fail
+check_item: status_code
+check_value: 400(int)
+assert_method: equal
+expect_value: 200(int)
+2020-08-17 17:35:15.723 | ERROR    | httprunner.response:validate:222 - assert body.code equal 0(int)	==> fail
+check_item: body.code
+check_value: None(NoneType)
+assert_method: equal
+expect_value: 0(int)
+2020-08-17 17:35:15.723 | ERROR    | httprunner.runner:log_req_resp_details:194 - 
+******************************** DETAILED REQUEST & RESPONSE ********************************
+====== request details ======
+url: https://api-primary.yangcong345.com/primary_account/course/coursePreInfo
+method: GET
+headers: {'accept': 'application/json, text/plain, */*', 'authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJ5aWQiOiI1ZTNhZmJkNWFmNjU0ODAwMDFjZTIyOTgiLCJwaG9uZSI6IjE4NTI0NjM1MjI3IiwicGxhdGZvcm0iOiJwY0g1Iiwid2VjaGF0SWQiOjE5NTIzMSwiZXhwIjoxNjI4MjIyNjc2fQ.XqpHj1HznASsyQP0flOT6XIVhyZqGzfBe4u9Qe9aXfI', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36', 'origin': 'https://yangcong345.com', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'https://yangcong345.com/xiaoxue/chapters?courseId=5f0fcc66e1e362742885f1fc&v=2', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'zh-CN,zh;q=0.9', 'HRUN-Request-ID': 'HRUN-acbde1d9-f854-4e8e-a737-776ae149004a-915564'}
+params: {'classId': '5f0fcc66e1e362742885f1fc'}
+data: ''
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+json: {}
+
+====== response details ======
+status_code: 400
+headers: {'Date': 'Mon, 17 Aug 2020 09:35:15 GMT', 'Content-Type': 'application/octet-stream', 'Content-Length': '0', 'Connection': 'keep-alive', 'X-Server-Info': 'primary-gateway-5cfb764cc9-46d2d;1', 'Access-Control-Allow-Origin': 'https://yangcong345.com', 'Access-Control-Allow-Methods': 'GET,HEAD,PUT,POST,DELETE', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains'}
+body: ''
+
+2020-08-17 17:35:15.724 | INFO     | httprunner.runner:test_start:444 - generate testcase log: /Users/yangshuai/PycharmProjects/untitled/primary_api_test/logs/acbde1d9-f854-4e8e-a737-776ae149004a.run.log

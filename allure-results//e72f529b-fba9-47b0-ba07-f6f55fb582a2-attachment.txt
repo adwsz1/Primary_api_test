@@ -1,0 +1,90 @@
+2020-08-17 17:35:23.501 | INFO     | httprunner.runner:test_start:435 - Start to run testcase: testcase description, TestCase ID: 912c143d-6058-4ab9-88dd-2a22bf10bf46
+2020-08-17 17:35:23.502 | INFO     | httprunner.runner:__run_step:278 - run step begin: /primary_account/shadow/handleUserWallet >>>>>>
+2020-08-17 17:35:23.562 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api-primary-test.yangcong345.com/primary_account/shadow/handleUserWallet
+headers  : {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json",
+    "Connection": "keep-alive",
+    "Host": "api-primary-test.yangcong345.com",
+    "Content-Length": "150",
+    "ShadowAuthorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMDczZTkxNzMzYzkyMTYxODhjNDlkYSIsImlhdCI6MTU5NjQ0MjAzMCwiZXhwIjoxNTk3NjUxNjMwfQ.s7KdF9cppQBtgd2-A6rKX57IwQZ3UGw7PU9wJcBb7sc",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMDczZTkxNzMzYzkyMTYxODhjNDlkYSIsImlhdCI6MTU5NjQ0MjAzMCwiZXhwIjoxNTk3NjUxNjMwfQ.s7KdF9cppQBtgd2-A6rKX57IwQZ3UGw7PU9wJcBb7sc",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Origin": "http://10.8.8.8",
+    "Sec-Fetch-Site": "cross-site",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Dest": "empty",
+    "Referer": "http://10.8.8.8/admin7/dimand/manage",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "HRUN-Request-ID": "HRUN-912c143d-6058-4ab9-88dd-2a22bf10bf46-923502"
+}
+cookies  : {}
+body     : {
+    "type": "income",
+    "mount": 1,
+    "extra": "\u81ea\u52a8\u5316\u6d4b\u8bd5",
+    "userId": "5d08d7487953731d75197c4c",
+    "classId": "5f0d5cf2c192bf87760b4297"
+}
+
+2020-08-17 17:35:23.563 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx/1.14.2",
+    "Date": "Mon, 17 Aug 2020 09:35:23 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "61",
+    "Connection": "keep-alive",
+    "x-server-info": "eafded20c593;1",
+    "access-control-allow-origin": "*",
+    "Access-Control-Allow-Methods": "GET,HEAD,PUT,POST,DELETE",
+    "vary": "Origin",
+    "access-control-expose-headers": "Content-Range",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "code": 403,
+    "message": "shadow\u767b\u5f55\u8fc7\u671f\uff0c\u8bf7\u91cd\u65b0\u767b\u5f55"
+}
+
+2020-08-17 17:35:23.563 | INFO     | httprunner.client:request:203 - status_code: 200, response_time(ms): 59.28 ms, response_length: 61 bytes
+2020-08-17 17:35:23.564 | INFO     | httprunner.response:validate:209 - assert status_code equal 200(int)	==> pass
+2020-08-17 17:35:23.564 | INFO     | httprunner.response:validate:209 - assert headers."Content-Type" equal application/json; charset=utf-8(str)	==> pass
+2020-08-17 17:35:23.564 | ERROR    | httprunner.response:validate:222 - assert body.code equal 0(int)	==> fail
+check_item: body.code
+check_value: 403(int)
+assert_method: equal
+expect_value: 0(int)
+2020-08-17 17:35:23.565 | ERROR    | httprunner.response:validate:222 - assert body.result equal True(bool)	==> fail
+check_item: body.result
+check_value: None(NoneType)
+assert_method: equal
+expect_value: True(bool)
+2020-08-17 17:35:23.565 | ERROR    | httprunner.runner:log_req_resp_details:194 - 
+******************************** DETAILED REQUEST & RESPONSE ********************************
+====== request details ======
+url: https://api-primary-test.yangcong345.com/primary_account/shadow/handleUserWallet
+method: POST
+headers: {'Host': 'api-primary-test.yangcong345.com', 'Connection': 'keep-alive', 'Content-Length': '126', 'Accept': 'application/json', 'ShadowAuthorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMDczZTkxNzMzYzkyMTYxODhjNDlkYSIsImlhdCI6MTU5NjQ0MjAzMCwiZXhwIjoxNTk3NjUxNjMwfQ.s7KdF9cppQBtgd2-A6rKX57IwQZ3UGw7PU9wJcBb7sc', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMDczZTkxNzMzYzkyMTYxODhjNDlkYSIsImlhdCI6MTU5NjQ0MjAzMCwiZXhwIjoxNTk3NjUxNjMwfQ.s7KdF9cppQBtgd2-A6rKX57IwQZ3UGw7PU9wJcBb7sc', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36', 'Content-Type': 'application/json;charset=UTF-8', 'Origin': 'http://10.8.8.8', 'Sec-Fetch-Site': 'cross-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://10.8.8.8/admin7/dimand/manage', 'Accept-Encoding': 'gzip, deflate, br', 'Accept-Language': 'zh-CN,zh;q=0.9', 'HRUN-Request-ID': 'HRUN-912c143d-6058-4ab9-88dd-2a22bf10bf46-923502'}
+params: {}
+data: ''
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+json: {'type': 'income', 'mount': 1, 'extra': '自动化测试', 'userId': '5d08d7487953731d75197c4c', 'classId': '5f0d5cf2c192bf87760b4297'}
+
+====== response details ======
+status_code: 200
+headers: {'Server': 'nginx/1.14.2', 'Date': 'Mon, 17 Aug 2020 09:35:23 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '61', 'Connection': 'keep-alive', 'x-server-info': 'eafded20c593;1', 'access-control-allow-origin': '*', 'Access-Control-Allow-Methods': 'GET,HEAD,PUT,POST,DELETE', 'vary': 'Origin', 'access-control-expose-headers': 'Content-Range', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains'}
+body: '{"code":403,"message":"shadow登录过期，请重新登录"}'
+
+2020-08-17 17:35:23.566 | INFO     | httprunner.runner:test_start:444 - generate testcase log: /Users/yangshuai/PycharmProjects/untitled/primary_api_test/logs/912c143d-6058-4ab9-88dd-2a22bf10bf46.run.log

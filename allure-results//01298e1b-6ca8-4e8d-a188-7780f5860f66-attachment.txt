@@ -1,0 +1,61 @@
+2020-08-17 17:35:24.280 | INFO     | httprunner.runner:test_start:435 - Start to run testcase: testcase description, TestCase ID: 0309dd6f-bcde-4299-b898-f50262501a64
+2020-08-17 17:35:24.281 | INFO     | httprunner.runner:__run_step:278 - run step begin: /primary_account/learnV2/updateLiveBroadcastEvent >>>>>>
+2020-08-17 17:35:25.215 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api-wx.yangcong345.com/primary_account/learnV2/updateLiveBroadcastEvent
+headers  : {
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/605.1.15 (KHTML, like Gecko)",
+    "accept-encoding": "gzip, deflate, br",
+    "accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "origin": "https://h5-v5-0.yangcong345.com",
+    "content-type": "application/json;charset=utf-8",
+    "authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ5aWQiOiI1ZTNhZmJkNWFmNjU0ODAwMDFjZTIyOTgiLCJwaG9uZSI6IjE4NTI0NjM1MjI3IiwicGxhdGZvcm0iOiJhcHBMZWFybkg1Iiwid2VjaGF0SWQiOjE5NTIzMSwiZXhwIjoxNjI4MzA4Nzc1fQ.OOiPwEwLAr4cfu31I2yuOdhRjg6i7W1JKm08TmOaqv4",
+    "referer": "https://h5-v5-0.yangcong345.com/xs-app/cv2/days",
+    "Content-Length": "233",
+    "accept-language": "zh-cn",
+    "HRUN-Request-ID": "HRUN-0309dd6f-bcde-4299-b898-f50262501a64-924282"
+}
+cookies  : {}
+body     : {
+    "updateType": "watch",
+    "userId": "5e3afbd5af65480001ce2298",
+    "classId": "5f0dbf07e08ce8fed7fa97d0",
+    "lessonId": "5f2ccfe77856843db5d8c2cb",
+    "moduleId": "5f2ccfe77856842522d8c2cc",
+    "moduleDetail": {
+        "id": "1239253",
+        "type": "roomId"
+    }
+}
+
+2020-08-17 17:35:25.215 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Mon, 17 Aug 2020 09:35:25 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "24",
+    "Connection": "keep-alive",
+    "x-server-info": "primary-school-server-5ddd47bf98-nx4tl;1",
+    "access-control-allow-origin": "*",
+    "Access-Control-Allow-Methods": "GET,HEAD,PUT,POST,DELETE",
+    "vary": "Origin",
+    "access-control-expose-headers": "Content-Range"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "code": 0,
+    "result": true
+}
+
+2020-08-17 17:35:25.216 | INFO     | httprunner.client:request:203 - status_code: 200, response_time(ms): 932.59 ms, response_length: 24 bytes
+2020-08-17 17:35:25.216 | INFO     | httprunner.response:validate:209 - assert status_code equal 200(int)	==> pass
+2020-08-17 17:35:25.217 | INFO     | httprunner.response:validate:209 - assert body.code equal 0(int)	==> pass
+2020-08-17 17:35:25.217 | INFO     | httprunner.response:validate:209 - assert body.result equal True(bool)	==> pass
+2020-08-17 17:35:25.217 | INFO     | httprunner.runner:__run_step:290 - run step end: /primary_account/learnV2/updateLiveBroadcastEvent <<<<<<
+
+2020-08-17 17:35:25.218 | INFO     | httprunner.runner:test_start:444 - generate testcase log: /Users/yangshuai/PycharmProjects/untitled/primary_api_test/logs/0309dd6f-bcde-4299-b898-f50262501a64.run.log

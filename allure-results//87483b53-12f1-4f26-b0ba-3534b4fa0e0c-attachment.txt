@@ -1,0 +1,70 @@
+2020-08-17 17:35:15.877 | INFO     | httprunner.runner:test_start:435 - Start to run testcase: testcase description, TestCase ID: 5cf013ee-727b-402f-a345-5e83be84c7c6
+2020-08-17 17:35:15.878 | INFO     | httprunner.runner:__run_step:278 - run step begin: /primary_account/user-lesson-learn/cb-exam >>>>>>
+2020-08-17 17:35:16.135 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://api-wx.yangcong345.com/primary_account/user-lesson-learn/cb-exam?lessonType=preExam&lessonModuleId=5f2ccfe6785684e418d8c2ad&classId=5f0dbf07e08ce8fed7fa97d0&testPaperId=e8810cf0-c0fa-11ea-80eb-57f4065adad0&lessonId=5f2ccfe6785684d9e2d8c2ac&isOpen=false
+headers  : {
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/605.1.15 (KHTML, like Gecko)",
+    "accept-encoding": "gzip, deflate, br",
+    "accept": "*/*",
+    "Connection": "keep-alive",
+    "origin": "https://yangcong345.com",
+    "referer": "https://yangcong345.com/mp_exercise/index.html?classId=5f0dbf07e08ce8fed7fa97d0&d_app_version=5.33.0&entrance=exam&firstScene=&from=courseInt&goalId=&isMultiProblem=true&lessonId=5f2ccfe6785684d9e2d8c2ac&lessonModuleId=5f2ccfe6785684e418d8c2ad&lessonName=%E6%91%B8%E5%BA%95%E6%B5%8B%E8%AF%95&lessonType=preExam&moudleType=CBExam&platform=app&psToken=eyJhbGciOiJIUzI1NiJ9.eyJ5aWQiOiI1ZTNhZmJkNWFmNjU0ODAwMDFjZTIyOTgiLCJwaG9uZSI6IjE4NTI0NjM1MjI3IiwicGxhdGZvcm0iOiJhcHBMZWFybkg1Iiwid2VjaGF0SWQiOjE5NTIzMSwiZXhwIjoxNjI4MzA4NTE1fQ.JONS1rA_ks6frlVceweodThT3RT8bLdGnKwyy93JgEc&semester=%E5%9B%9B%E5%B9%B4%E7%BA%A7&testPaperId=e8810cf0-c0fa-11ea-80eb-57f4065adad0&u_role=student&u_user=5e3afbd5af65480001ce2298&videoId=&videoName=&device=08BE5209-54CA-419A-9490-8EA9EED6B3B9&openUUID=fa34e7ef7bf60da55da79b66d4e90588d21e745e&userId=5e3afbd5af65480001ce2298&appVersion=5.33.0&platform=ios&phoneModel=iPad11,3&token=Bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjVlM2FmYmQ1YWY2NTQ4MDAwMWNlMjI5OCIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNTk2NzcxNzA3LCJleHAiOjE1OTkzNjQ0OTJ9.xWcC6ihLiIHQElfQbDGPZbDunXXN1alELg-H0YgV-LY&clientChannel=appstore&clientType=ios-app&environment=release&exerciseDebug=0",
+    "accept-language": "zh-cn",
+    "authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ5aWQiOiI1ZTNhZmJkNWFmNjU0ODAwMDFjZTIyOTgiLCJwaG9uZSI6IjE4NTI0NjM1MjI3IiwicGxhdGZvcm0iOiJhcHBMZWFybkg1Iiwid2VjaGF0SWQiOjE5NTIzMSwiZXhwIjoxNjI4MzA4NTE1fQ.JONS1rA_ks6frlVceweodThT3RT8bLdGnKwyy93JgEc",
+    "HRUN-Request-ID": "HRUN-5cf013ee-727b-402f-a345-5e83be84c7c6-915878",
+    "Content-Length": "2",
+    "Content-Type": "application/json"
+}
+cookies  : {}
+body     : {}
+
+2020-08-17 17:35:16.136 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 400
+headers  : {
+    "Date": "Mon, 17 Aug 2020 09:35:16 GMT",
+    "Content-Type": "application/octet-stream",
+    "Content-Length": "0",
+    "Connection": "keep-alive",
+    "X-Server-Info": "wechatgateway-86f684c957-vqbc2;1",
+    "Access-Control-Allow-Origin": "https://yangcong345.com",
+    "Access-Control-Allow-Methods": "GET,HEAD,PUT,POST,DELETE"
+}
+cookies  : {}
+encoding : None
+content_type : application/octet-stream
+body     : 
+
+2020-08-17 17:35:16.137 | ERROR    | httprunner.client:request:200 - 400 Client Error: Bad Request for url: https://api-wx.yangcong345.com/primary_account/user-lesson-learn/cb-exam?lessonType=preExam&lessonModuleId=5f2ccfe6785684e418d8c2ad&classId=5f0dbf07e08ce8fed7fa97d0&testPaperId=e8810cf0-c0fa-11ea-80eb-57f4065adad0&lessonId=5f2ccfe6785684d9e2d8c2ac&isOpen=false
+2020-08-17 17:35:16.137 | ERROR    | httprunner.response:validate:222 - assert status_code equal 200(int)	==> fail
+check_item: status_code
+check_value: 400(int)
+assert_method: equal
+expect_value: 200(int)
+2020-08-17 17:35:16.138 | ERROR    | httprunner.response:validate:222 - assert body.code equal 0(int)	==> fail
+check_item: body.code
+check_value: None(NoneType)
+assert_method: equal
+expect_value: 0(int)
+2020-08-17 17:35:16.138 | ERROR    | httprunner.runner:log_req_resp_details:194 - 
+******************************** DETAILED REQUEST & RESPONSE ********************************
+====== request details ======
+url: https://api-wx.yangcong345.com/primary_account/user-lesson-learn/cb-exam
+method: GET
+headers: {'accept': '*/*', 'origin': 'https://yangcong345.com', 'referer': 'https://yangcong345.com/mp_exercise/index.html?classId=5f0dbf07e08ce8fed7fa97d0&d_app_version=5.33.0&entrance=exam&firstScene=&from=courseInt&goalId=&isMultiProblem=true&lessonId=5f2ccfe6785684d9e2d8c2ac&lessonModuleId=5f2ccfe6785684e418d8c2ad&lessonName=%E6%91%B8%E5%BA%95%E6%B5%8B%E8%AF%95&lessonType=preExam&moudleType=CBExam&platform=app&psToken=eyJhbGciOiJIUzI1NiJ9.eyJ5aWQiOiI1ZTNhZmJkNWFmNjU0ODAwMDFjZTIyOTgiLCJwaG9uZSI6IjE4NTI0NjM1MjI3IiwicGxhdGZvcm0iOiJhcHBMZWFybkg1Iiwid2VjaGF0SWQiOjE5NTIzMSwiZXhwIjoxNjI4MzA4NTE1fQ.JONS1rA_ks6frlVceweodThT3RT8bLdGnKwyy93JgEc&semester=%E5%9B%9B%E5%B9%B4%E7%BA%A7&testPaperId=e8810cf0-c0fa-11ea-80eb-57f4065adad0&u_role=student&u_user=5e3afbd5af65480001ce2298&videoId=&videoName=&device=08BE5209-54CA-419A-9490-8EA9EED6B3B9&openUUID=fa34e7ef7bf60da55da79b66d4e90588d21e745e&userId=5e3afbd5af65480001ce2298&appVersion=5.33.0&platform=ios&phoneModel=iPad11,3&token=Bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjVlM2FmYmQ1YWY2NTQ4MDAwMWNlMjI5OCIsInJvbGUiOiJzdHVkZW50IiwiaWF0IjoxNTk2NzcxNzA3LCJleHAiOjE1OTkzNjQ0OTJ9.xWcC6ihLiIHQElfQbDGPZbDunXXN1alELg-H0YgV-LY&clientChannel=appstore&clientType=ios-app&environment=release&exerciseDebug=0', 'accept-language': 'zh-cn', 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/605.1.15 (KHTML, like Gecko)', 'authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJ5aWQiOiI1ZTNhZmJkNWFmNjU0ODAwMDFjZTIyOTgiLCJwaG9uZSI6IjE4NTI0NjM1MjI3IiwicGxhdGZvcm0iOiJhcHBMZWFybkg1Iiwid2VjaGF0SWQiOjE5NTIzMSwiZXhwIjoxNjI4MzA4NTE1fQ.JONS1rA_ks6frlVceweodThT3RT8bLdGnKwyy93JgEc', 'accept-encoding': 'gzip, deflate, br', 'HRUN-Request-ID': 'HRUN-5cf013ee-727b-402f-a345-5e83be84c7c6-915878'}
+params: {'lessonType': 'preExam', 'lessonModuleId': '5f2ccfe6785684e418d8c2ad', 'classId': '5f0dbf07e08ce8fed7fa97d0', 'testPaperId': 'e8810cf0-c0fa-11ea-80eb-57f4065adad0', 'lessonId': '5f2ccfe6785684d9e2d8c2ac', 'isOpen': 'false'}
+data: ''
+cookies: {}
+timeout: 120
+allow_redirects: True
+verify: False
+json: {}
+
+====== response details ======
+status_code: 400
+headers: {'Date': 'Mon, 17 Aug 2020 09:35:16 GMT', 'Content-Type': 'application/octet-stream', 'Content-Length': '0', 'Connection': 'keep-alive', 'X-Server-Info': 'wechatgateway-86f684c957-vqbc2;1', 'Access-Control-Allow-Origin': 'https://yangcong345.com', 'Access-Control-Allow-Methods': 'GET,HEAD,PUT,POST,DELETE'}
+body: ''
+
+2020-08-17 17:35:16.138 | INFO     | httprunner.runner:test_start:444 - generate testcase log: /Users/yangshuai/PycharmProjects/untitled/primary_api_test/logs/5cf013ee-727b-402f-a345-5e83be84c7c6.run.log

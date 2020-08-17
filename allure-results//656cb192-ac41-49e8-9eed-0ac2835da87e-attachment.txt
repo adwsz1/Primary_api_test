@@ -1,0 +1,59 @@
+2020-08-17 17:35:14.180 | INFO     | httprunner.runner:test_start:435 - Start to run testcase: testcase description, TestCase ID: 518696d7-bca1-4289-88f7-f17621db2169
+2020-08-17 17:35:14.181 | INFO     | httprunner.runner:__run_step:278 - run step begin: /primary_account/passport/sendCaptcha >>>>>>
+2020-08-17 17:35:14.358 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://api-primary.yangcong345.com/primary_account/passport/sendCaptcha
+headers  : {
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36 Edg/84.0.522.52",
+    "accept-encoding": "gzip, deflate, br",
+    "accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Content-Length": "262",
+    "x-crypto-api": "true",
+    "content-type": "application/json;charset=UTF-8",
+    "origin": "https://yangcong345.com",
+    "sec-fetch-site": "same-site",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "empty",
+    "referer": "https://yangcong345.com/xiaoxue/login",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
+    "HRUN-Request-ID": "HRUN-518696d7-bca1-4289-88f7-f17621db2169-914182"
+}
+cookies  : {}
+body     : {
+    "sign": "8DC28CF98E911AFF61456391ECDBF8A65F2CC007primary",
+    "context": "VTJGc2RHVmtYMTlCZzBud3hySXAzZHQvbFJVbVFNNlZJY2JkQzhLbU8zYXY1ZWw2bmtOR1c1dnVrUGhkQjhVa1JEYkN5QXNzUytBUUpnN1M2N3poVGIzSU9yV1JXRVNOUnBWSWIwSys1K0RBUDhjWC9hL2hCNDUxWWZURkV0bHk=",
+    "crypto": true
+}
+
+2020-08-17 17:35:14.359 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Mon, 17 Aug 2020 09:35:14 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "205",
+    "Connection": "keep-alive",
+    "x-server-info": "primary-school-server-5ddd47bf98-nx4tl;1",
+    "access-control-allow-origin": "*",
+    "Access-Control-Allow-Methods": "GET,HEAD,PUT,POST,DELETE",
+    "vary": "Origin",
+    "access-control-expose-headers": "Content-Range",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json; charset=utf-8
+body     : {
+    "sign": "99B1233BE54C3C8ABB2AC5871AE119915F3A4F52primary",
+    "context": "VTJGc2RHVmtYMTl1cEpLbnpwS2dNS3pRdVFzZWkrYk1pWW1FaDQ4U1hGNHhWaEd4Nzl5N1hXQzhZRDZLR1RPd21oVVhZOHVEV0FDQ216eHk1U3BDSWc9PQ==",
+    "crypto": true
+}
+
+2020-08-17 17:35:14.359 | INFO     | httprunner.client:request:203 - status_code: 200, response_time(ms): 175.0 ms, response_length: 205 bytes
+2020-08-17 17:35:14.360 | INFO     | httprunner.response:validate:209 - assert status_code equal 200(int)	==> pass
+2020-08-17 17:35:14.360 | INFO     | httprunner.response:validate:209 - assert body.crypto equal True(bool)	==> pass
+2020-08-17 17:35:14.361 | INFO     | httprunner.runner:__run_step:290 - run step end: /primary_account/passport/sendCaptcha <<<<<<
+
+2020-08-17 17:35:14.361 | INFO     | httprunner.runner:test_start:444 - generate testcase log: /Users/yangshuai/PycharmProjects/untitled/primary_api_test/logs/518696d7-bca1-4289-88f7-f17621db2169.run.log
