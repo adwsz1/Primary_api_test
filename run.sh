@@ -8,6 +8,7 @@ if [ ! -d "./venv/" ]; then
 else
 
     echo "文件夹已经存在"
+    . venv/bin/activate
 
 fi
 
