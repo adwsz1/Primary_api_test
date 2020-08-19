@@ -30,7 +30,7 @@ class TestCaseT0819获取招生计划信息(HttpRunner):
                 }
             )
             .validate()
-            .assert_equal("status_code", 304)
+            .assert_equal("status_code", 200)
         ),
     ]
 

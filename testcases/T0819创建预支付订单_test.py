@@ -55,7 +55,7 @@ class TestCaseT0819创建预支付订单(HttpRunner):
             )
             .validate()
             .assert_equal("status_code", 200)
-            .assert_equal("body.code", 0)
+
         ),
     ]
 
