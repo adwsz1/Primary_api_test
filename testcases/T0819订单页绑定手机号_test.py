@@ -36,13 +36,7 @@ class TestCaseT0819订单页绑定手机号(HttpRunner):
             )
             .validate()
             .assert_equal("status_code", 200)
-            .assert_equal(
-                "body.sign", "00D9D0E9AD00C282B99A1A49CF42E7E15F3CCFDEprimary"
-            )
-            .assert_equal(
-                "body.context",
-                "VTJGc2RHVmtYMStiZGk1WXNyaVlyOEVuSEpxRUJQc3dqNUdXK0JBU1puV2trck9uV1NpTjBXNWc1OVhKcTNGQXJ4TTV5VFFjYnkraHBWUzlzSnhuR0VrNUFrYWRkRHQ5QksxVG9xRzBhSDdCeS9KYnc0RVpjSGdwZUpNeXJEWnVkOFBVVUl4eUlQWTQzSTNCb3BoaUlhbG5admtuRFdrcnFnaE9DbDhOVG9zR1FaRWNwRFNrVnBVUk51Q253aW5XOUlRMklLSmRGaGVsVGIwcklsTDBIek9uZUU3emdwTU11STVrMkk1L2U5am9Sd0lpRElDZktYNGJ0a0tMKzg4czVUV1JoVVN4Y3dWQmsxRGpkdDNVNjIrQlRvUjMrQnA0dzNnNmJOclh6ay9uRUNzZzNjTWlrZVVhZDBCZG5DUjRyVzhPbkhvbjhTV095bnVEWW50OEx2YTF5VlJKdjZMRytKclUyRnZZTFZHRDBHYlVrMlQvbXNMMWlBSDVERHdCTVV2S0g0M2VDeHJUb0orT2VnR0FsUT09",
-            )
+
             .assert_equal("body.crypto", True)
         ),
     ]
