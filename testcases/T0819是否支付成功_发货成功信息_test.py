@@ -4,7 +4,7 @@
 from httprunner import HttpRunner, Config, Step, RunRequest, RunTestCase
 
 
-class TestCaseT0819是否支付成功，发货成功信息(HttpRunner):
+class TestCaseT0819是否支付成功_发货成功信息(HttpRunner):
     config = Config("testcase description").verify(False)
 
     teststeps = [
@@ -14,4 +14,4 @@ class TestCaseT0819是否支付成功，发货成功信息(HttpRunner):
     ]
 
 if __name__ == "__main__":
-    TestCaseT0819是否支付成功，发货成功信息().test_start()
+    TestCaseT0819是否支付成功_发货成功信息().test_start()
