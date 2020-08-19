@@ -1,5 +1,5 @@
 #! /bin/bash
-for i in $(ls -l har/ | grep -nE '0818.+har' | awk {'print $9'}); do
+for i in $(ls -l har/ | grep -nE '0819.+har' | awk {'print $9'}); do
   har2case har/$i
 done
 mv har/*.py testcases/
